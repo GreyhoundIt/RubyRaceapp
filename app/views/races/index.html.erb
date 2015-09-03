@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Races</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Distance</th>
+      <th>Terrain</th>
+      <th>Scenic</th>
+      <th>Pb</th>
+      <th>Toilets</th>
+      <th>Changingrm</th>
+      <th>Water</th>
+      <th>Medal</th>
+      <th>Tshirt</th>
+      <th>Website</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Area</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td><%= race.title %></td>
+        <td><%= race.price %></td>
+        <td><%= race.distance %></td>
+        <td><%= race.terrain %></td>
+        <td><%= race.scenic %></td>
+        <td><%= race.pb %></td>
+        <td><%= race.toilets %></td>
+        <td><%= race.changingrm %></td>
+        <td><%= race.water %></td>
+        <td><%= race.medal %></td>
+        <td><%= race.tshirt %></td>
+        <td><%= race.website %></td>
+        <td><%= race.date %></td>
+        <td><%= race.description %></td>
+        <td><%= race.area %></td>
+        <td><%= link_to 'Show', race %></td>
+        <td><%= link_to 'Edit', edit_race_path(race) %></td>
+        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Race', new_race_path %>

@@ -1,0 +1,77 @@
+<%= form_for(@race) do |f| %>
+  <% if @race.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@race.errors.count, "error") %> prohibited this race from being saved:</h2>
+
+      <ul>
+      <% @race.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :distance %><br>
+    <%= f.text_field :distance %>
+  </div>
+  <div class="field">
+    <%= f.label :terrain %><br>
+    <%= f.text_field :terrain %>
+  </div>
+  <div class="field">
+    <%= f.label :scenic %><br>
+    <%= f.text_field :scenic %>
+  </div>
+  <div class="field">
+    <%= f.label :pb %><br>
+    <%= f.text_field :pb %>
+  </div>
+  <div class="field">
+    <%= f.label :toilets %><br>
+    <%= f.check_box :toilets %>
+  </div>
+  <div class="field">
+    <%= f.label :changingrm %><br>
+    <%= f.check_box :changingrm %>
+  </div>
+  <div class="field">
+    <%= f.label :water %><br>
+    <%= f.text_field :water %>
+  </div>
+  <div class="field">
+    <%= f.label :medal %><br>
+    <%= f.text_field :medal %>
+  </div>
+  <div class="field">
+    <%= f.label :tshirt %><br>
+    <%= f.text_field :tshirt %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_area :area %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

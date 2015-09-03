@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: 9.99
+  distance: MyString
+  terrain: MyString
+  scenic: MyString
+  pb: MyString
+  toilets: false
+  changingrm: false
+  water: MyString
+  medal: MyString
+  tshirt: MyString
+  website: MyString
+  date: 2015-09-03
+  description: MyText
+  area: MyText
+
+two:
+  title: MyString
+  price: 9.99
+  distance: MyString
+  terrain: MyString
+  scenic: MyString
+  pb: MyString
+  toilets: false
+  changingrm: false
+  water: MyString
+  medal: MyString
+  tshirt: MyString
+  website: MyString
+  date: 2015-09-03
+  description: MyText
+  area: MyText
